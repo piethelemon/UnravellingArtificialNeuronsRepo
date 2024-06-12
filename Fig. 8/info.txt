@@ -1,0 +1,20 @@
+Circuit implemented:
+ - Fig. 8a
+
+Transistor model used:
+ - OECT.va
+ 
+Data contained:
+ - Decay with membrane insertion/data_res.mat: simulated data of the time decay of the signal when a membrane is inserted
+ - Frequency membrane analysis/CM_data.mat: simulated frequency analysis data when the membrane capacitance is swept
+ - Frequency membrane analysis/RM_data.mat: simulated frequency analysis data when the membrane resistance is swept
+ - Membrane time oscillation/time_data.mat: simulated data of the oscillation being inhibited when the membrane is inserted, and restarted when the membrane is disrupted
+
+Reproduce the simulations:
+To reproduce the transient simulations in Fig. 8b and c, use the the circuit in Fig. 8a with the parameters reported in the Methods section of the paper, using a transient simulation. By enabling or disabling the part of the circuit representing the biological membrane, it's possible to inhibit the spiking of the OAN. This can also be used to measure the decay time of the system when the membrane is ON.
+To reproduce the frequency analyis in Fig. 8e to h, use the same circuit for Fig. 8b but with a Frequency Sweep simulation. A Parametric simulation should be done for the desired parameter.
+
+Running the code:
+ - To plot Fig.8 panel g, run the code "Decay with membrane insertion/tau_R_compute.m" in MATLAB
+ - To plot Fig.8 panels d to f, run the code "Frequency membrane analysis/freq_plots.m" in MATLAB
+ - To plot Fig.8 panel b, run the code "Membrane time oscillation/time_membrane.m" in MATLAB

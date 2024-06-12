@@ -1,0 +1,16 @@
+Circuit implemented:
+ - Fig. 1a
+ - Fig. 2b
+ 
+Data contained:
+ - S curves/Scurve_data_IV.mat: Data for the S curve measured in the I(V) case
+ - S curves/Scurve_data_VI.mat: Data for the S curve measured in the V(I) case
+ - Transient simulations/data_oscillation.mat: Data for the transient simulations
+
+Reproduce the simulations:
+To reproduce the S curves in Fig. 1 panels b and c, the circuit in Fig. 2b with the parameters reported in the Methods section of the paper should be implemented and a DC simulation should be executed. The MATLAB code requires the voltage and current at the output nodes of the circuits (i.e., Vout and Iout).
+To reproduce the transient simulations in Fig. 1 panels d and e, the circuit in Fig. 1a with the parameters reported in the Methods section of the paper should be implemented and a transient simulation should be executed. The MATLAB code requires the voltage and current at the output nodes of the circuits (i.e., Vout and Iout).
+
+Running the code:
+ - To plot Fig.1 panels b and c, run the code "S curves/Scurve_plot.m" in MATLAB
+ - To plot Fig.1 panels d and e, run the code "Transient simulations/osc_plot.m" in MATLAB

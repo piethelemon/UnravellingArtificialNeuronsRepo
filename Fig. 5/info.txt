@@ -1,0 +1,14 @@
+Circuit implemented:
+ - Fig. 1a
+ 
+Data contained:
+ - Vin vs Firing/single_neuron_vin_osc.mat: simulations data with spiking induced by the VIN with millivolts variations
+ - Vin vs Firing/vin_osc_measures.mat: measurementes of the spiking induced by the VIN with millivolts variations
+ - Vin vs Firing/single_neuron_vin_osc.mat: simulations data with spiking induced by the VIN with microvolts variations
+
+Reproduce the simulations:
+To reproduce the simulations, the circuit in Fig. 1a with the parameters reported in the Methods section of the paper should be implemented and a transient simulation should be executed. By adding a 20 mVpp oscillation at the input voltage and by setting the DC voltage input to a proper level, it's possible to obtain the behaviour in Fig. 5a. Same can be updated for Fig. 5f when the oscillation is at the amplitude stated in the paper.
+
+Running the code:
+ - To plot Fig.5 panels a, run the code "Vin vs Firing/single_neuron_vin_osc.m" in MATLAB
+ - To plot Fig.5 panels f, run the code "Vin vs Firing with microvolts/single_neuron_vin_osc.m" in MATLAB

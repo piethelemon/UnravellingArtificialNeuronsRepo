@@ -1,0 +1,21 @@
+Circuit implemented:
+ - Fig. 1a
+ - Fig. 2b
+ 
+Data contained:
+ - DC simulation/DC_data.mat: simulated data of the S curve when ionic concentration is changed
+ - Noise effect/data_conc_noise.mat: simulated data of the noise effect on ionic concentration measurement
+ - Time vs concentration/time_data_NaCl.mat: simulated data of current spiking with different NaCl concentrations
+ - Time vs concentration/time_measures_NaCl.mat: measurements of the current spiking at different NaCl concentrations
+
+Reproduce the simulations:
+To reproduce the transient simulations in Fig. 7a, use the the circuit in Fig. 1a with the parameters reported in the Methods section of the paper should be implemented, using a transient simulation. Transistor T1 must use the model containing the ionic concentration, while T2 must use the model of an OECT without the effect of ionic concentration. By changing the ionic concentration in the parameters of T1, it's possible to notice the change in frequency related to the ionic concentration. A Parameter Sweep module is present to do multiple experiments in one go.
+Adding a noise source (as done for Fig. 6) allows to simulate the effect of input noise on the frequency oscillation of the system, allowing to reproduce the Fig. 7e.
+To reproduce the S curves in Fig. 6g and h, the circuit in Fig. 1a with the parameters reported in the Methods section of the paper should be implemented and a transient simulation should be executed, and while still implementing the ionic concentration effect for T1.
+To reproduce the effect of selective ionic membranes, use the same circuit implemented for Fig. 7a (parameters for the membrane are listed in Supplementary Figure 24). 
+
+Running the code:
+ - To plot Fig.7 panels g and h, run the code "DC simulation/DC_plot.m" in MATLAB
+ - To plot Fig.7 panel e, run the code "Noise effect/plot_noise.m" in MATLAB
+ - To plot Fig.7 panel a, run the code "Time vs concentration/time_plot.m" in MATLAB
+ - To plot Fig.7 panel b, c and d, run the code "Time vs concentration/freq_vs_concentration.m" in MATLAB 

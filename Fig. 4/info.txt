@@ -1,0 +1,11 @@
+Circuit implemented:
+ - Fig. 1a
+ 
+Data contained:
+ - Parameter analysis/: all the folders contain a *.mat file with the resulting performances for each parameter changed and the considered value of the parameter itself.
+
+Reproduce the simulations:
+The user should  implement the circuit in Fig. 1a, with the parameters reported in the Methods section of the paper, and a transient simulation with parameter sweep component should be defined. The parameter swept is the one they want to analyse. The parameters can then be extracted by considering the output voltage and current at the nodes Vspike and Ispike.
+
+Running the code:
+ - To plot Fig.4, run the code Parameter analysis/plot_data.m

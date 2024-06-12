@@ -1,0 +1,14 @@
+Circuit implemented:
+ - Fig. 1a
+ - Fig. 2b
+ 
+Data contained:
+ - S curves/Scurve_data_IV.mat: Data for the S curve measured in the I(V) case
+ - Transistor zones/data_panels.mat: contains VSG1 and VSG2 as displayed in Fig.2 panels c and d
+
+Reproduce the simulations:
+To reproduce the S curves and the transistor zones plots in Fig. 2, the circuit in Fig. 2b with the parameters reported in the Methods section of the paper should be implemented and a DC simulation should be executed. The MATLAB code requires the voltage and current at the output nodes of the circuits (i.e., Vout and Iout), while VSG1 and VSG2 are the voltages at the nodes with the same names. Fig.2 panel a uses the same data in the Fig.1 case.
+
+Running the code:
+ - To plot Fig.2 panel a, run the code "S curves/Scurve_plot.m" in MATLAB
+ - To plot Fig.2 panels c and d, run the code "Transistor zones/transistor_regions.m" in MATLAB

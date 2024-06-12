@@ -1,0 +1,15 @@
+Circuit implemented:
+ - Fig. 1a
+ - Fig. 2b
+ 
+Data contained:
+ - Noise/noise_data.mat: simulated data of spiking induced by noise
+ - Noise/noise_measures.mat: measurements of spiking induced by noise
+ - Noise/noise_figure.mat: MATLAB-generated noise figure used at the input voltage
+
+Reproduce the simulations:
+To reproduce the transient simulations in Fig. 6a, c and e, use the the circuit in Fig. 1a with the parameters reported in the Methods section of the paper should be implemented, using a transient simulation. A value-controlled generator was added to load the noise_figure.mat data, to simulate the presence of a white noise generator with a sigma amplitude of 1V and a time resolution of 1 microsecond minimum. The DC voltage of the input voltage source should be set in order to be close to the spiking region, and the noise amplitude should be regulated in order to obtain the same results as in Fig. 6.
+To reproduce the S curves in Fig. 6b, d and f, the circuit in Fig. 1a with the parameters reported in the Methods section of the paper should be implemented and a transient simulation should be executed. The input voltage of the load part of the circuit should be set as the same values used in the transient simulations.
+
+Running the code:
+ - To plot Fig.6, run the code "Noise/noise_plot.m" in MATLAB

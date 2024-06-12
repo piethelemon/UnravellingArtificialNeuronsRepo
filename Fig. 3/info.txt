@@ -1,0 +1,16 @@
+Circuit implemented:
+ - Fig. 1a
+ - Fig. 2b
+ 
+Data contained:
+ - Frequency/CL_data.mat: Frequency vs load capacitance data, with the measurements, simulations and analytical points
+ - Voltage time simulation/data_vout.mat: Data for the output voltage transient simulation
+
+Reproduce the simulations:
+To reproduce the frequency vs load capacitance simulation results in Fig. 3e, the circuit in Fig. 1a with the parameters reported in the Methods section of the paper should be implemented and a transient simulation should be done. The MATLAB code requires the signal frequency in order to compare it with the measurements and the analytical expression (see Eq. 5) with the proper parameters.
+To reproduce the time simulation results in Fig. 3f to h, the circuit in Fig. 1a with the parameters reported in the Methods section of the paper should be implemented and a transient simulation should be done. The different capacitance values of CL used in the paper must be set. The current value Ispike should be used.
+To reproduce the voltage output simulations in Fig. 3b, the circuit in Fig. 1a with the parameters reported in the Methods section of the paper should be implemented and a transient simulation should be executed. The MATLAB code requires the voltage at the output nodes of the circuits (i.e., Vspike).
+
+Running the code:
+ - To plot Fig.3 panel b, run the code "Voltage time simulation/plot.m" in MATLAB
+ - To plot Fig.3 panels e, f, g and h, run the code "Frequency/plot_frequencies.m" in MATLAB
